@@ -1,0 +1,24 @@
+.MediaOuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2px;
+}
+@media all and (max-width: 1100px) {
+  .MediaOuterContainer {
+    background-color: rgb(193, 128, 194);
+    width: 100%;
+    padding: 2px;
+  }
+}
+@media all and (max-width: 900px) {
+}
+.container {
+  /* flex-direction: column;
+  display: flex;
+  justify-content: flex;
+  align-items: center; */
+}

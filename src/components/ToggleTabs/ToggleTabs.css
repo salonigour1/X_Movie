@@ -1,0 +1,33 @@
+.toggleTabs {
+  height: 2.5rem;
+  border-radius: 40px 40px 40px 40px;
+  /* overflow:hidden; */
+  width: 14rem;
+  padding: 0.1rem;
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.TabButton {
+  border-radius: 40px 40px 40px 40px;
+  width: 6.9rem;
+  background-color: transparent;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.active {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 111, 57, 0.9585959383753502) 10%,
+    rgba(229, 33, 70, 0.9585959383753502) 46%
+  );
+}

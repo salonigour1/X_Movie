@@ -1,0 +1,44 @@
+.footer {
+  /* position: absolute; */
+  bottom: 0;
+  color: var(--white);
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer_menuItems {
+  font-weight: 600;
+  padding: 1.5rem;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-around;
+}
+.infoText {
+  width: 80%;
+  margin: auto;
+  font-size: 17px;
+  padding: 0.8rem;
+}
+.socialIcons {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.icon {
+  font-size: 30px;
+}
+@media all and (max-width: 700px) {
+  .footer_menuItems {
+    width: 80%;
+  }
+  .infoText {
+    width: 90%;
+  }
+  .socialIcons {
+    width: 50%;
+  }
+}

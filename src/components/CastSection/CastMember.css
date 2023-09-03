@@ -1,0 +1,25 @@
+.castCard img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.castCard {
+}
+/* .castCard span {
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+} */
+.castName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.castCard {
+  margin: 0.5rem 1rem;
+}
+.castCharacterName {
+  color: grey;
+  font-size: 1rem;
+}
