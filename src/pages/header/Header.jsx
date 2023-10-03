@@ -12,7 +12,6 @@ function Header() {
   const [mobileview, setMobileView] = useState(false);
   const [showCross, setShowCross] = useState(false);
   const handleMobileView = () => {
-    console.log('object');
     setShowCross(!showCross);
     showCross ? setMobileView(true) : setMobileView(false);
   };
@@ -23,7 +22,7 @@ function Header() {
       navigate(`/explore/${type}`);
     }
   };
-  console.log(showCross);
+
   const [query, setQuery] = useState('');
   const handleSearchQuery = (e) => {
     if (e.key === 'Enter' && query.length > 0) {

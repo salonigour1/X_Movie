@@ -33,7 +33,6 @@ function DetailsBanner() {
   const { data: recommendedMovie, loading: recommendedLoading } = useFetch(
     `/${mediaType}/${id}/recommendations`
   );
-  console.log(similarMovie.results);
 
   const handleMinToHour = (min) => {
     if (min < 60) {
@@ -41,7 +40,7 @@ function DetailsBanner() {
     }
     const hour = Math.trunc(min / 60);
     const minutes = min - hour * 60;
-    console.log(minutes);
+
     return hour + 'h ' + minutes + 'm';
   };
   const handleDirector = (data) => {
@@ -56,7 +55,7 @@ function DetailsBanner() {
       .filter((curr) => curr.job === 'Director')
       .map((curr) => {
         str += curr.name + ', ';
-        console.log(str);
+
         return curr.name;
       });
 
@@ -95,7 +94,7 @@ function DetailsBanner() {
 
     container.scrollTo({ left: scrollAmount, behavior: 'smooth' });
   };
-  console.log(loading && castLoading && similarLoading && recommendedLoading);
+
   return (
     <div className='detailBanner'>
       {loading && castLoading && similarLoading && recommendedLoading ? (
@@ -227,7 +226,6 @@ function DetailsBanner() {
                           firstTabData={similarMovie.results}
                           tabContent={[]}
                         />
-                        {console.log(similarMovie)}
                       </div>
                     )}
 
